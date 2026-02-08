@@ -1,8 +1,9 @@
+// Ezzat Mohamadein ComSC-210 Lab4A
 using namespace std;
 #include <iostream>
 
 
-
+// Define restaurant struct
 struct restaurant {
     string name;
     string city;
@@ -11,9 +12,11 @@ struct restaurant {
     double rating;
 
 };
-
+// Define function prototypes
 restaurant createRestaurant();
+void outputRestaurant(restaurant r);
 
+// Creates restaurant struct and prompts user for input
 restaurant createRestaurant() {
     restaurant r;
     cout << "Enter restaurant name: ";
@@ -29,6 +32,7 @@ restaurant createRestaurant() {
     return r;
 }
 
+//outputs restaurant data
 void outputRestaurant(restaurant r) {
     cout << "Restaurant name: " << r.name << endl;
     cout << "City: " << r.city << endl;
