@@ -29,8 +29,16 @@ restaurant createRestaurant() {
     return r;
 }
 
+void outputRestaurant(restaurant r) {
+    cout << "Restaurant name: " << r.name << endl;
+    cout << "City: " << r.city << endl;
+    cout << "Country: " << r.country << endl;
+    cout << "Zip Code: " << r.zipCode << endl;
+    cout << "Rating: " << r.rating << endl;
+}
+
 int main() {
     restaurant r = createRestaurant();
-    cout << r.name << endl << r.city << endl << r.country << endl << r.zipCode << endl << r.rating << endl;
+    outputRestaurant(r);
     return 0;
 }
