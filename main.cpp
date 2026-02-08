@@ -10,7 +10,7 @@ struct restaurant {
     int zipCode;
     double rating;
 
-}
+};
 
 restaurant createRestaurant();
 
